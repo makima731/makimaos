@@ -30,7 +30,7 @@ To build and run MakimaOS, you will need the following tools installed on your d
 
 2. Compile the Kernel:
    ```bash
-   make kernel
+   make build-x86_64
    ```
 
 3. Generate Bootable ISO:
