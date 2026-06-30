@@ -2,7 +2,7 @@ ENTRY(start)
 
 SECTIONS
 {
-    . = 1M;
+    . = 0x8000;
 
     .boot :
     {
@@ -12,5 +12,6 @@ SECTIONS
     .text :
     {
         *(.text)
+        *(.rodata)
     }
 }
