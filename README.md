@@ -33,14 +33,9 @@ To build and run MakimaOS, you will need the following tools installed on your d
    make build-x86_64
    ```
 
-3. Generate Bootable ISO:
-   ```bash
-   make iso
-   ```
-
 4. Run in QEMU:
    ```bash
-   qemu-system-x86_64 -cdrom MakimaOS.iso
+   qemu-system-x86_64 -cdrom dist/x86_64/kernel.iso
    ```
 
 ## Roadmap
