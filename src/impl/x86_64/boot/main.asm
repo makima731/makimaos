@@ -13,8 +13,7 @@ start:
     call setup_page_tables
     call enable_paging
 
-    mov eax, gdt64.pointer
-    lgdt [eax]
+    lgdt [gdt64.pointer]
     jmp gdt64.code_segment:long_mode_start
 
     hlt
